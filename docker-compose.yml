@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+    dstools:
+        image: matcomuh/dstools
+        container_name: dstools
+        build: "."
+        volumes: 
+            - "./:/src"
+        ports:
+            - "8501:8501"
+        command: "streamlit run /src/app.py"
