@@ -9,4 +9,4 @@ services:
             - "./:/src"
         ports:
             - "8501:8501"
-        command: "streamlit run /src/app.py"
+        command: "streamlit run /src/src/app.py"
