@@ -18,10 +18,12 @@ class App:
         }
 
     def sample_datasets(self):
+        path = Path(__file__).parent.parent / "data"
+
         return {
-            "Cars (classification)": "/src/data/car.data",
-            "Monthly beer production in Austria (timeseries)": "/src/data/monthly-beer-production-in-austria.csv",
-            "Electric production (timeseries)": "/src/data/Electric_Production.csv",
+            "Cars (classification)": path / "car.data",
+            "Monthly beer production in Austria (timeseries)": path / "monthly-beer-production-in-austria.csv",
+            "Electric production (timeseries)": path / "Electric_Production.csv",
         }
 
     def run(self):
