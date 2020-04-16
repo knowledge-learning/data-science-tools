@@ -3,7 +3,7 @@
 This repository contains a very simple [streamlit](https://streamlit.io) application
 that allows non-expert users to perform standard data analysis tasks.
 
-Take a look at <https://dstools.herokuapp.com>.
+Take a look at <https://ds-toolkit.herokuapp.com>.
 
 ## Running locally
 
