@@ -20,7 +20,7 @@ class App:
     def sample_datasets(self):
         return {
             "Cars (classification)": "/src/data/car.data",
-            "Monthly beer (timeseries)": "/src/data/monthly-beer-production-in-austria.csv",
+            "Monthly beer production in Austria (timeseries)": "/src/data/monthly-beer-production-in-austria.csv",
             "Electric production (timeseries)": "/src/data/Electric_Production.csv",
         }
 
@@ -105,9 +105,11 @@ class App:
             "Select the value column", list(set(dataset.columns) - set([time_index]))
         )
 
+        dataset[time_index] = pd.to_datetime(dataset[time_index])
+
         start, end = st.slider("Range to visualize", 0, len(dataset), (0, len(dataset)))
         st.write(
-            f"Selected `{end - start}` values in the range `{dataset[time_index][start]}` - `{dataset[time_index][start]}`"
+            f"Selected `{end - start}` values in the range `{dataset[time_index][start]}`:`{dataset[time_index][end-1]}`"
         )
 
         st.altair_chart(
