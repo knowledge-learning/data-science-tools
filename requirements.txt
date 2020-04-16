@@ -1,2 +1,7 @@
-streamlit
-sklearn
+pandas==1.0.3
+streamlit==0.57.3
+scipy==1.4.1
+altair==4.1.0
+numpy==1.18.2
+scikit_learn==0.22.2.post1
+black==19.10b0

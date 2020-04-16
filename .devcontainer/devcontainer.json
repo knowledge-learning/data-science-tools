@@ -31,6 +31,7 @@
 		"ms-vsliveshare.vsliveshare-audio",
 		"karigari.chat",
 		"ms-vsliveshare.vsliveshare-pack",
+		"ms-python.python"
 	]
 
 	// Uncomment the next line if you want start specific services in your Docker Compose config.
